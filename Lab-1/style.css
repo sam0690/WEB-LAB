@@ -2,11 +2,11 @@
     background-color: white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 .body{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container{
@@ -14,12 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
     height: auto;
     width: 600px;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 5px 5px rgba(73, 71, 71,0.3);
+    box-shadow: 6px 6px rgba(73, 71, 71,0.2);
 }
 
 .header{
@@ -40,24 +40,24 @@
     height: auto;
     width: 400px;
 }
-.username,.btn{
+.username,.btn,.password{
     display: flex;
     flex-direction: column;
     margin-top: 5px;
 }
-.username input{
-    height: 20px;
+.username input,.password input{
+    height: 30px;
     width:400px;
-    border: 2px rgb(114, 101, 101) solid;
+    border: 2px rgba(114, 101, 101,0.6) solid;
     border-radius: 10px;
 
 }
-input:focus{
+.username input:focus,.password input:focus{
     outline: none;
 }
 
 .btn{
-    justify-content: center;
+    /* justify-content: center; */
     height: 25px;
     width: 200px;
     font-size: medium;
@@ -67,4 +67,11 @@ input:focus{
     border-radius: 50px;
     cursor: pointer;
     margin: 10px;
+}
+button:focus{
+    outline: none;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
 }

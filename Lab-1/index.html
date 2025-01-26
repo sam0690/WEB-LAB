@@ -7,43 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <script src="script.js"></script>
+
+    
     <div class="container">
-        <div class="header">
-            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEjNEia1ZhJGQ/company-logo_200_200/company-logo_200_200/0/1697224961377?e=2147483647&v=beta&t=mOrwuZ1B7FMdR0s-gXLG0TxkHF2XvrVeRAgUqz4hlU0" alt="Logo.svg">
-            <h1 class="title">
-                LOGIN FORM
-            </h1>
-        </div>
-        <div class="info">
-            <span class="username">
-                <label for="username">Username</label>
-                <input type="text" placeholder="Username" required>
-            </span>
-            <span class="username">
-                <label for="password">Password</label>
-                <input type="password" placeholder="Password" required>
-            </span>
-            <span class="boxes">
-                <p>Educational Fields</p>
-                <span>
+        <form  onsubmit='return formValidator()' method = "get">
+            <div class="header">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEjNEia1ZhJGQ/company-logo_200_200/company-logo_200_200/0/1697224961377?e=2147483647&v=beta&t=mOrwuZ1B7FMdR0s-gXLG0TxkHF2XvrVeRAgUqz4hlU0" alt="Logo.svg">
+                <h1 class="title">
+                    LOGIN FORM
+                </h1>
+            </div>  
+            <div class="info">
+                <span class="username">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" required>
+                </span>
+                <span class="password">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" required>
+                </span>
+                <span class="boxes">
+                    <p>Educational Fields</p>
                     <input type="radio" name="BSC.CSIT">
                     <label for="Education">Bsc.CSIT</label>
-                </span>
-               <span>
                     <input type="radio" name="BSC.CSIT">
                     <label for="Education">BCA</label>
-               </span>
-               <span>
                     <input type="radio" name="BSC.CSIT">
                     <label for="Education">BIT</label>
-               </span>
+                </span>
                 
-                
-            </span>
-            <button type="submit" class="btn" value="Submit">Submit</button>
-        </div>
+            </div>
+            <div class="btns">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+            
+        </form>
+
     </div>
-    <script src="script.js"></script>
+   
+    
     
 </body>
 </html>
