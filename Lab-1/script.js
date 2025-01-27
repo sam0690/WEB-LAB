@@ -1,6 +1,8 @@
-const formValidator = (e) => {
+function formValidator(){
+    console.log("KHAI TA CHALEKO ???")
     const username = document.getElementsByClassName('username');
     if(username.value.trim().length < 4){
+        console.log("MILYO TA ?????")
         username.style.border = "solid 1px red";
         alert("username should be at least 4 characters");
         return false;
@@ -13,9 +15,9 @@ const formValidator = (e) => {
         return false;
     }
 
-    const boxes = document.getElementsByName('Bsc.CSIT');
-    for(leti=0; i<boxes.length; i++){
-        if( ! boxes[i].checked){
+    const box = document.getElementsByName('Bsc.CSIT');
+    for(leti=0; i<box.length; i++){
+        if( ! box[i].checked){
             alert("Please Select Your educational field.");
             return false;
         }
