@@ -23,19 +23,20 @@ function formValidator(){
     //validating checkbox selection
 
     const education = document.getElementsByName('education[]');
-    let checked = false;
-    for ( let i = 0 ; i<education.length;i++){
-        if(education[i].checked){
-            checked = true;
+    let check = false;
+    for ( let i = 0 ; i < education.length; i++){
+        if(education[i].check){
+            check = true;
             break;
         }
+        if(!check){
+            alert("Please select at least one educational field");
+            return false;
+        }
+    
     }
 
-    if(!checked){
-        alert("Please select at least one educational field");
-        return false;
-    }
-
+   
 
     return true;
 }
